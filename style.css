@@ -157,6 +157,7 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
 }
 .button-primary, .buy-button { color: #fffaf2; background: #292622; }
+a.buy-button { text-decoration: none; }
 .button-secondary { background: #fffaf275; }
 .button-primary:hover, .button-secondary:hover, .buy-button:hover:not(:disabled) {
   transform: translateY(-2px);
