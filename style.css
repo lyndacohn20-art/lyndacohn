@@ -516,7 +516,7 @@ a.buy-button { text-decoration: none; }
   font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: .82rem;
 }
-.footer-social { align-items: center; gap: 14px; display: flex; }
+.footer-social { align-items: center; gap: 20px; display: flex; }
 .footer-social a { color: #8b806f; align-items: center; transition: color .18s; display: flex; }
 .footer-social a:hover { color: #25211d; }
 .footer-bottom-links { align-items: center; gap: 8px; display: flex; }
