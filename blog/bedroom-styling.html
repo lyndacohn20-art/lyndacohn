@@ -14,6 +14,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bedroom Styling on a Budget" />
   <meta name="twitter:description" content="How to layer linen, ceramic, and soft light for a bedroom that feels expensive without the price tag." />
+  <link rel="canonical" href="https://lyndacohn.com/blog/bedroom-styling" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/style.css" />
 </head>
@@ -22,6 +23,10 @@
 <header class="site-header">
   <nav class="site-nav">
     <a class="site-logo" href="/">THE-LYNDA-EDIT</a>
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
     <ul class="nav-links">
       <li><a href="/#outdoor-living">Outdoor Living</a></li>
       <li><a href="/#bedroom-decor">Bedroom Decor</a></li>
@@ -93,6 +98,15 @@
       <p>Total: roughly $260–$615 for a bedroom that looks like it cost thousands. The trick is prioritizing texture and quality in the pieces you touch most (bedding, lighting) and keeping everything else simple.</p>
 
       <p>Want to see my current favorite bedroom picks? Head to the <a href="/#shop">shop</a> and filter by Bedroom Decor — everything there is something I've personally tested and loved.</p>
+
+      <p style="text-align: center; margin: 2rem 0;">
+        <a href="https://pinterest.com/pin/create/button/?url=https://lyndacohn.com/blog/bedroom-styling&description=Bedroom%20Styling%20on%20a%20Budget%20%7C%20THE-LYNDA-EDIT"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display: inline-block; background: #E60023; color: white; padding: 12px 24px; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+          Save to Pinterest
+        </a>
+      </p>
     </div>
 
     <div class="blog-post-nav">
@@ -120,6 +134,29 @@
     </div>
   </div>
 </footer>
+
+<script async defer src="https://assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>
+
+<script>
+(function() {
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks = document.querySelector('.nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+})();
+</script>
 
 </body>
 </html>

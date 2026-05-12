@@ -14,6 +14,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="My Top Amazon Home Finds This Month" />
   <meta name="twitter:description" content="The viral picks and hidden gems actually worth adding to cart — all under $75." />
+  <link rel="canonical" href="https://lyndacohn.com/blog/amazon-finds" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/style.css" />
 </head>
@@ -22,6 +23,10 @@
 <header class="site-header">
   <nav class="site-nav">
     <a class="site-logo" href="/">THE-LYNDA-EDIT</a>
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
     <ul class="nav-links">
       <li><a href="/#outdoor-living">Outdoor Living</a></li>
       <li><a href="/#bedroom-decor">Bedroom Decor</a></li>
@@ -76,6 +81,15 @@
 
       <p>Want to shop these picks? Head to the <a href="/#shop">shop section</a> where I keep all my current favorites organized by category. And if you discover an amazing Amazon find of your own, I'd love to hear about it — <a href="/#about">drop me a message</a>!</p>
 
+      <p style="text-align: center; margin: 2rem 0;">
+        <a href="https://pinterest.com/pin/create/button/?url=https://lyndacohn.com/blog/amazon-finds&description=My%20Top%20Amazon%20Home%20Finds%20This%20Month%20%7C%20THE-LYNDA-EDIT"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display: inline-block; background: #E60023; color: white; padding: 12px 24px; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+          Save to Pinterest
+        </a>
+      </p>
+
       <p class="blog-disclosure"><em>Disclosure: As an Amazon Associate, I may earn a small commission from qualifying purchases made through links on this site. This doesn't affect my recommendations — I only share products I genuinely use and love.</em></p>
     </div>
 
@@ -104,6 +118,29 @@
     </div>
   </div>
 </footer>
+
+<script async defer src="https://assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>
+
+<script>
+(function() {
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks = document.querySelector('.nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
