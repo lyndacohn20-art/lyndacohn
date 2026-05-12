@@ -62,6 +62,18 @@
       <button class="cart-toggle" aria-label="Open shopping cart">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57L23 6H6"/></svg>
         <span class="cart-badge" hidden>0</span>
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <div class="nav-actions">
+      <button type="button" class="nav-icon-btn" id="wishlist-toggle" aria-label="Saved items">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        <span class="icon-badge" id="wishlist-count"></span>
+      </button>
+      <button type="button" class="nav-icon-btn" id="cart-toggle" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        <span class="icon-badge" id="cart-count"></span>
       </button>
     </div>
   </nav>
@@ -152,6 +164,7 @@
           <img src="https://images.unsplash.com/photo-1600210492493-0946911f159a?auto=format&fit=crop&w=1100&q=82" alt="Woven Rattan Lounge Chair" />
           <span>Lynda pick</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -172,7 +185,11 @@
                 4.8
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID1?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=woven+rattan+lounge+chair+outdoor+patio" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=woven+rattan+lounge+chair+outdoor+patio" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -183,6 +200,7 @@
           <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1100&q=82" alt="Terracotta Herb Planter Set" />
           <span>Best seller</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -203,7 +221,11 @@
                 4.9
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID2?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=terracotta+herb+planter+set" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=terracotta+herb+planter+set" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -214,6 +236,7 @@
           <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d6c4e4a?auto=format&fit=crop&w=1100&q=82" alt="Linen Duvet Cover Set" />
           <span>Editor pick</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -234,7 +257,11 @@
                 4.9
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID3?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=linen+duvet+cover+set+stonewashed" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=linen+duvet+cover+set+stonewashed" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -245,6 +272,7 @@
           <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1100&q=82" alt="Ceramic Bedside Lamp" />
           <span>New arrival</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -265,7 +293,11 @@
                 4.7
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID4?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=ceramic+bedside+lamp+linen+shade" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=ceramic+bedside+lamp+linen+shade" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -276,6 +308,7 @@
           <img src="https://images.unsplash.com/photo-1602874801007-bd2fb6f74fbb?auto=format&fit=crop&w=1100&q=82" alt="Glass Ribbed Vase Duo" />
           <span>Under $50</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -296,7 +329,11 @@
                 4.6
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID5?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=glass+ribbed+vase+set" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=glass+ribbed+vase+set" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -307,6 +344,7 @@
           <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1100&q=82" alt="Faux Olive Tree" />
           <span>Viral pick</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -327,7 +365,11 @@
                 4.5
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID6?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=faux+olive+tree+realistic+indoor" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=faux+olive+tree+realistic+indoor" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -338,6 +380,7 @@
           <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1100&q=82" alt="Travertine Decorative Tray" />
           <span>Staging must-have</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -358,7 +401,11 @@
                 4.8
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID7?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=travertine+decorative+tray" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=travertine+decorative+tray" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -369,6 +416,7 @@
           <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1100&q=82" alt="Linen Throw Pillow Pair" />
           <span>Stager favorite</span>
           <button class="fav-btn" aria-label="Add to favorites"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          <button type="button" class="wishlist-btn" aria-label="Save to wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
         </div>
         <div class="product-card-body">
           <div>
@@ -389,7 +437,11 @@
                 4.8
               </span>
             </div>
-            <a href="https://www.amazon.com/dp/YOURPRODUCTID8?tag=YOURTAG-20" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <a href="https://www.amazon.com/s?k=stonewashed+linen+throw+pillow+pair" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            <div class="card-actions">
+              <button type="button" class="cart-btn compact-buy" aria-label="Add to cart">Add to Cart</button>
+              <a href="https://www.amazon.com/s?k=stonewashed+linen+throw+pillow+pair" class="buy-button compact-buy" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>
+            </div>
           </div>
         </div>
       </article>
@@ -530,6 +582,38 @@
     <a href="#shop" class="button-secondary cart-shop-link">Start shopping</a>
   </div>
 </aside>
+<div class="drawer-overlay" id="drawer-overlay"></div>
+
+<aside class="drawer" id="cart-drawer" aria-label="Shopping cart">
+  <div class="drawer-header">
+    <h3>Your Cart</h3>
+    <button type="button" class="drawer-close" id="cart-close" aria-label="Close cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" id="cart-items"></div>
+  <div class="drawer-empty" id="cart-empty">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#b8a07b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+    <p>Your cart is empty</p>
+    <span>Add items to see them here</span>
+  </div>
+</aside>
+
+<aside class="drawer" id="wishlist-drawer" aria-label="Saved items">
+  <div class="drawer-header">
+    <h3>Saved Items</h3>
+    <button type="button" class="drawer-close" id="wishlist-close" aria-label="Close saved items">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" id="wishlist-items"></div>
+  <div class="drawer-empty" id="wishlist-empty">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#b8a07b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+    <p>No saved items yet</p>
+    <span>Tap the heart on any product to save it</span>
+  </div>
+</aside>
+
 <script async defer src="https://assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>
 
 <script>
@@ -775,6 +859,218 @@
   });
 
   renderCart();
+  // ---- Cart & Wishlist ----
+
+  var cart = JSON.parse(localStorage.getItem('lynda-cart') || '[]');
+  var wishlist = JSON.parse(localStorage.getItem('lynda-wishlist') || '[]');
+
+  var overlay = document.getElementById('drawer-overlay');
+  var cartDrawer = document.getElementById('cart-drawer');
+  var wishlistDrawer = document.getElementById('wishlist-drawer');
+  var cartToggle = document.getElementById('cart-toggle');
+  var wishlistToggle = document.getElementById('wishlist-toggle');
+  var cartClose = document.getElementById('cart-close');
+  var wishlistClose = document.getElementById('wishlist-close');
+  var cartCountEl = document.getElementById('cart-count');
+  var wishlistCountEl = document.getElementById('wishlist-count');
+
+  function getProductInfo(card) {
+    var id = card.getAttribute('data-product-id');
+    var name = card.querySelector('h3').textContent;
+    var price = card.querySelector('.product-card-footer strong').textContent;
+    var img = card.querySelector('.product-media img').getAttribute('src');
+    var link = card.querySelector('.buy-button').getAttribute('href');
+    return { id: id, name: name, price: price, img: img, link: link };
+  }
+
+  function saveCart() { localStorage.setItem('lynda-cart', JSON.stringify(cart)); }
+  function saveWishlist() { localStorage.setItem('lynda-wishlist', JSON.stringify(wishlist)); }
+
+  function updateBadges() {
+    if (cart.length > 0) {
+      cartCountEl.textContent = cart.length;
+      cartCountEl.classList.add('has-items');
+    } else {
+      cartCountEl.classList.remove('has-items');
+    }
+    if (wishlist.length > 0) {
+      wishlistCountEl.textContent = wishlist.length;
+      wishlistCountEl.classList.add('has-items');
+    } else {
+      wishlistCountEl.classList.remove('has-items');
+    }
+  }
+
+  function updateCardStates() {
+    cards.forEach(function(card) {
+      var id = card.getAttribute('data-product-id');
+      var heartBtn = card.querySelector('.wishlist-btn');
+      var cartBtn = card.querySelector('.cart-btn');
+      if (wishlist.some(function(w) { return w.id === id; })) {
+        heartBtn.classList.add('active');
+      } else {
+        heartBtn.classList.remove('active');
+      }
+      if (cart.some(function(c) { return c.id === id; })) {
+        cartBtn.classList.add('in-cart');
+        cartBtn.textContent = 'In Cart';
+      } else {
+        cartBtn.classList.remove('in-cart');
+        cartBtn.textContent = 'Add to Cart';
+      }
+    });
+  }
+
+  function openDrawer(drawer) {
+    overlay.classList.add('open');
+    drawer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawers() {
+    overlay.classList.remove('open');
+    cartDrawer.classList.remove('open');
+    wishlistDrawer.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function buildDrawerItem(item, type) {
+    var div = document.createElement('div');
+    div.className = 'drawer-item';
+    div.innerHTML =
+      '<div class="drawer-item-img"><img src="' + item.img + '" alt="' + item.name + '" /></div>' +
+      '<div class="drawer-item-info">' +
+        '<h4>' + item.name + '</h4>' +
+        '<p>' + item.price + '</p>' +
+        '<div class="drawer-item-actions">' +
+          '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer nofollow sponsored">Shop on Amazon</a>' +
+        '</div>' +
+      '</div>';
+    var removeBtn = document.createElement('button');
+    removeBtn.type = 'button';
+    removeBtn.className = 'drawer-remove-btn';
+    removeBtn.setAttribute('aria-label', 'Remove');
+    removeBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>';
+    removeBtn.addEventListener('click', function() {
+      if (type === 'cart') {
+        cart = cart.filter(function(c) { return c.id !== item.id; });
+        saveCart();
+        renderCartDrawer();
+      } else {
+        wishlist = wishlist.filter(function(w) { return w.id !== item.id; });
+        saveWishlist();
+        renderWishlistDrawer();
+      }
+      updateBadges();
+      updateCardStates();
+    });
+    div.appendChild(removeBtn);
+    return div;
+  }
+
+  function renderCartDrawer() {
+    var container = document.getElementById('cart-items');
+    var empty = document.getElementById('cart-empty');
+    container.innerHTML = '';
+    if (cart.length === 0) {
+      container.style.display = 'none';
+      empty.style.display = '';
+    } else {
+      container.style.display = '';
+      empty.style.display = 'none';
+      cart.forEach(function(item) {
+        container.appendChild(buildDrawerItem(item, 'cart'));
+      });
+    }
+  }
+
+  function renderWishlistDrawer() {
+    var container = document.getElementById('wishlist-items');
+    var empty = document.getElementById('wishlist-empty');
+    container.innerHTML = '';
+    if (wishlist.length === 0) {
+      container.style.display = 'none';
+      empty.style.display = '';
+    } else {
+      container.style.display = '';
+      empty.style.display = 'none';
+      wishlist.forEach(function(item) {
+        container.appendChild(buildDrawerItem(item, 'wishlist'));
+      });
+    }
+  }
+
+  // Event listeners for wishlist hearts
+  cards.forEach(function(card) {
+    var heartBtn = card.querySelector('.wishlist-btn');
+    heartBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var info = getProductInfo(card);
+      var idx = -1;
+      wishlist.forEach(function(w, i) { if (w.id === info.id) idx = i; });
+      if (idx > -1) {
+        wishlist.splice(idx, 1);
+      } else {
+        wishlist.push(info);
+      }
+      saveWishlist();
+      updateBadges();
+      updateCardStates();
+      renderWishlistDrawer();
+    });
+  });
+
+  // Event listeners for cart buttons
+  cards.forEach(function(card) {
+    var cartBtn = card.querySelector('.cart-btn');
+    cartBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var info = getProductInfo(card);
+      var idx = -1;
+      cart.forEach(function(c, i) { if (c.id === info.id) idx = i; });
+      if (idx > -1) {
+        cart.splice(idx, 1);
+      } else {
+        cart.push(info);
+      }
+      saveCart();
+      updateBadges();
+      updateCardStates();
+      renderCartDrawer();
+    });
+  });
+
+  // Drawer open/close
+  cartToggle.addEventListener('click', function() { renderCartDrawer(); openDrawer(cartDrawer); });
+  wishlistToggle.addEventListener('click', function() { renderWishlistDrawer(); openDrawer(wishlistDrawer); });
+  cartClose.addEventListener('click', closeDrawers);
+  wishlistClose.addEventListener('click', closeDrawers);
+  overlay.addEventListener('click', closeDrawers);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeDrawers(); });
+
+  // Init
+  updateBadges();
+  updateCardStates();
+
+  // Mobile hamburger menu
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks = document.querySelector('.nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 })();
 </script>
 
