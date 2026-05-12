@@ -95,6 +95,22 @@ img { max-width: 100%; display: block; }
 }
 .nav-links a:hover { color: #25211d; }
 
+/* Hamburger Menu (mobile only) */
+.nav-hamburger {
+  display: none;
+  background: none;
+  color: #5f554b;
+  cursor: pointer;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  transition: color .18s;
+}
+.nav-hamburger:hover { color: #25211d; }
+.nav-hamburger .close-icon { display: none; }
+.nav-hamburger.open .hamburger-icon { display: none; }
+.nav-hamburger.open .close-icon { display: block; }
+
 /* Hero */
 .hero-shell, .shop-section, .journal-section, .detail-page {
   width: min(1180px, 100% - 32px);
@@ -548,8 +564,19 @@ a.buy-button { text-decoration: none; }
 
 /* Responsive — Mobile */
 @media (max-width: 640px) {
-  .site-nav { flex-direction: column; gap: 10px; }
-  .nav-links { flex-wrap: wrap; justify-content: center; gap: 10px 16px; }
+  .site-nav { flex-wrap: wrap; position: relative; }
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 0 4px;
+    border-top: 1px solid #2926221f;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { display: block; padding: 8px 0; }
+  .nav-actions { margin-left: auto; }
   .hero-shell, .shop-section, .journal-section, .detail-page, .about-section { width: min(100% - 22px, 1180px); }
   .hero-copy h1 { font-size: clamp(3rem, 18vw, 4.5rem); }
   .hero-image-wrap { border-radius: 8px 8px 56px; min-height: 360px; }
@@ -883,12 +910,6 @@ a.journal-card:hover .read-more { color: #25211d; }
   .nav-actions { gap: 4px; }
 }
 @media (max-width: 640px) {
-  .site-nav { position: relative; }
-  .nav-actions {
-    position: absolute;
-    top: 10px;
-    right: 0;
-  }
   .card-actions { flex-direction: column; }
   .card-actions .cart-btn,
   .card-actions .buy-button { width: 100%; }

@@ -57,6 +57,10 @@
       <li><a href="#blog">Blog</a></li>
       <li><a href="#about">About</a></li>
     </ul>
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
     <div class="nav-actions">
       <button type="button" class="nav-icon-btn" id="wishlist-toggle" aria-label="Saved items">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
@@ -831,6 +835,24 @@
   // Init
   updateBadges();
   updateCardStates();
+
+  // Mobile hamburger menu
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks = document.querySelector('.nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 })();
 </script>
 
